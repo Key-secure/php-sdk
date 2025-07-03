@@ -1,9 +1,9 @@
 <?php
-namespace custody\client;
+namespace keysecure\custody\client;
 
 
-use custody\client\model\Result;
-use custody\crypto\RsaUtils;
+use keysecure\custody\client\model\Result;
+use keysecure\custody\crypto\RsaUtils;
 use GuzzleHttp;
 
 

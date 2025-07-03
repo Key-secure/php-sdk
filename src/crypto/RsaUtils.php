@@ -1,8 +1,8 @@
 <?php
 
-namespace custody\crypto;
+namespace keysecure\custody\crypto;
 
-use custody\base64\Base64UrlSafe;
+use keysecure\custody\base64\Base64UrlSafe;
 
 class RsaUtils
 {
@@ -40,7 +40,7 @@ class RsaUtils
      */
     public static function Encrypt($str, $privateKey) {
         $crypted = array();
-//        $data = json_encode($str);
+        // $data = json_encode($str);
         $data = $str;
         $dataArray = str_split($data, 234);
         foreach($dataArray as $subData){

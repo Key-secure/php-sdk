@@ -1,5 +1,5 @@
 <?php
-namespace custody\client\model;
+namespace keysecure\custody\client\model;
 
 
 class Result

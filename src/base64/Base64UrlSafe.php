@@ -1,6 +1,6 @@
 <?php
 
-namespace custody\base64;
+namespace keysecure\custody\base64;
 
 
 class Base64UrlSafe

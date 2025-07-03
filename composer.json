@@ -1,15 +1,15 @@
 {
-    "name": "custody/sdk",
-    "descriptioin": "custody sdk",
-    "pretty_version" : "1.0.1",
-    "version" : "1.0.1",
+    "name": "keysecure-custody/sdk",
+    "descriptioin": "keysecure custody sdk",
+    "pretty_version" : "1.0.0",
+    "version" : "1.0.0",
     "require": {
         "php": ">=5.4.0",
         "guzzlehttp/guzzle": "6.5.8"
     },
     "autoload": {
         "psr-4": {
-            "custody\\": "src"
+            "keysecure\\custody\\": "src"
         }
     },
     "license": "MIT",

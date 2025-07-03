@@ -1,5 +1,5 @@
 <?php
-namespace custody\client;
+namespace keysecure\custody\client;
 
 interface CustodyApi
 {
