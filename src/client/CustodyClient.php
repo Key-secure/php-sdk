@@ -200,9 +200,10 @@ class CustodyClient implements CustodyApi
      * @param $withdrawAddress Withdrawal address
      * @param $withdrawAmount Withdrawal Amount
      * @param $withdrawSymbol Withdrawal coin
+     * @param $remark Withdrawal remark (optional)
      * @return custody Platform withdrawal id
      */
-    public function Withdraw($requestId, $fromCustodyUid, $withdrawAddress, $withdrawAmount, $withdrawSymbol){
+    public function Withdraw($requestId, $fromCustodyUid, $withdrawAddress, $withdrawAmount, $withdrawSymbol, $remark = ""){
         $params = array(
             'symbol'=>$withdrawSymbol,
             'request_id'=>$requestId,
@@ -210,6 +211,9 @@ class CustodyClient implements CustodyApi
             'to_address'=>$withdrawAddress,
             'amount'=>$withdrawAmount,
         );
+        if(!empty($remark)){
+            $params['remark'] = $remark;
+        }
         return $this->doRequest(Config::URL_WITHDRAW, HTTP_POST, $params);
     }
 

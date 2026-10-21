@@ -69,9 +69,10 @@ interface CustodyApi
      * @param $withdrawAddress Withdrawal address
      * @param $withdrawAmount Withdrawal Amount
      * @param $withdrawSymbol Withdrawal coin
+     * @param $remark Withdrawal remark (optional)
      * @return custody Platform withdrawal id
      */
-    public function Withdraw($requestId, $fromCustodyUid, $withdrawAddress, $withdrawAmount, $withdrawSymbol);
+    public function Withdraw($requestId, $fromCustodyUid, $withdrawAddress, $withdrawAmount, $withdrawSymbol, $remark = "");
 
     /**
      * Sync withdrawal record
